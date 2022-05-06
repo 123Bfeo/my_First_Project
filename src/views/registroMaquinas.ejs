@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style1.css" />
+    <title>inventory guarantee</title>
+    <title>Control de Reparaciones</title>
+  </head>
+
+  <body bgcolor="white">
+    <center>
+      <h1>CONTROL REPARACIONES</h1>
+    </center>
+
+    <section class="form-register">
+      <center><h4>Formulario registro</h4></center>
+      <form action="/registromaquina" method="POST">
+        <input
+          type="number"
+          name="n_traslado"
+          class="controls"
+          placeholder="Ingrese numero del traslado"
+        />
+
+        <label for="fecha">
+          Fecha de ingreso
+          <input type="date" name="f_ingreso" class="controls" id="fecha" />
+        </label>
+
+        <input
+          type="text"
+          name="activo_m"
+          class="controls"
+          placeholder="Activo de la maquina"
+        />
+        <input
+          type="text"
+          name="descripcion"
+          class="controls"
+          placeholder="Descripcion"
+        />
+        <div style="display: flex; margin-bottom: 10px">
+          <p>Estado del equipo:</p>
+          <select name="estado">
+            <option>Pendiente</option>
+            <option>Funcional</option>
+            <option>Reparado</option>
+            <option>Garantia</option>
+            <option>RepGarantia</option>
+            <option>PendRepuesto</option>
+            <option>Baja</option>
+          </select>
+        </div>
+
+        <input
+          type="number"
+          name="serviceDesk"
+          class="controls"
+          placeholder="Numero del serviceDesk"
+        />
+        <label for="revision">
+          Fecha de revision
+          <input type="date" name="f_revision" class="controls" id="revision" />
+        </label>
+
+        <input
+          type="text"
+          name="observacion"
+          class="controls"
+          placeholder="Observaciones"
+        />
+        <label for="escalamiento">
+          Fecha escalamiento proveedor
+          <input
+            type="date"
+            name="f_escalamiento"
+            class="controls"
+            id="escalamiento"
+          />
+        </label>
+
+        <input
+          type="text"
+          name="ticket"
+          class="controls"
+          placeholder="Ticket proveedor"
+        />
+        <label for="reparacion">
+          Fecha de reparacion
+          <input
+            type="date"
+            name="f_reparaciones"
+            class="controls"
+            id="reparacion"
+          />
+        </label>
+
+        <input
+          type="text"
+          name="R_reporte"
+          class="controls"
+          placeholder="Responsable del reporte"
+        />
+        <input
+          type="text"
+          name="R_reparaciones"
+          class="controls"
+          placeholder="Responsable de reparacion"
+        />
+        <center>
+          <button class="buttons" type="submit">Guardar registro</button>
+        </center>
+      </form>
+      <center>
+        <input class="buttons" type="submit" name="" value="Eliminar" />
+        <input class="buttons" type="submit" name="" value="Limpiar" />
+      </center>
+    </section>
+  </body>
+</html>

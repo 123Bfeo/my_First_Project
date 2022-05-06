@@ -1,0 +1,22 @@
+{
+  "name": "proyect-maye",
+  "version": "1.0.0",
+  "description": "registro de maquinas ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayerly",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
+    "sequelize": "^6.19.0",
+    "sequelize-cli": "^6.4.1",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  }
+}
