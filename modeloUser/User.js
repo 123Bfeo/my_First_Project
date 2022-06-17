@@ -25,8 +25,8 @@ const User = {
         return searchUser;
     }
 }
-//module.exports = User;
+module.exports = User;
 //console.log(User.getData())
 //console.log(User.listUsers())
 //console.log(User.UserById(2))
-console.log(User.searchUserEmail("Mayerly@gmail.com"))
+//console.log(User.searchUserEmail("Mayerly@gmail.com"))
